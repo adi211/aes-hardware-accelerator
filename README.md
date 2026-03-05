@@ -89,8 +89,8 @@ The system operates under a strict **Start/Busy/Done handshake** managed by a 4-
   rst ──►│                              ├──► busy
 start ──►│           Top                ├──► sb_valid
          │                              ├──► fsm_state [1:0]
- data_in ►│ [127:0]               [127:0]├──► data_out
-         │                        [127:0]├──► sb_out
+data_in ►│ [127:0]               [127:0]├──► data_out
+         │                       [127:0]├──► sb_out
          └──────────────────────────────┘
 ```
 
@@ -120,21 +120,21 @@ A **layered, self-checking** environment built in SystemVerilog — no tradition
  │  │   Stimuli   │─txns───►│     AES_BFM (Driver +      │  │
  │  │  Generator  │         │        Monitor)            │  │
  │  │             │         └──────────┬─────────────────┘  │
- │  │ • 3 directed│                    │ drive / sample      │
- │  │ • 256 sweep │    ┌───────────────▼──────────┐          │
- │  │ • 300 random│    │     RTL / DUT (Top.sv)   │          │
- │  └──────┬──────┘    │     via dut_if.sv        │          │
- │         │           └──────────────────────────┘          │
- │    calc expected                                          │
- │  ┌──────▼───────────┐   observed events                   │
- │  │  Golden Ref Model│──────────────────────────────►      │
- │  │  (SubBytes+MC)   │         ┌────────────────────┐      │
- │  └──────────────────┘         │  Scoreboard        │      │
- │                               │  • sb_out @ sb_valid│     │
- │   ┌────────────────────────┐  │  • data_out @ done │      │
- │   │ Assertions (SVA)       │  └────────────────────┘      │
- │   │ Functional Coverage    │                              │
- │   └────────────────────────┘                              │
+ │  │ • 3 directed│                    │ drive / sample     │
+ │  │ • 256 sweep │    ┌───────────────▼──────────┐         │
+ │  │ • 300 random│    │     RTL / DUT (Top.sv)   │         │
+ │  └──────┬──────┘    │     via dut_if.sv        │         │
+ │         │           └──────────────────────────┘         │
+ │    calc expected                                         │
+ │  ┌──────▼───────────┐   observed events                  │
+ │  │  Golden Ref Model│──────────────────────────────►     │
+ │  │  (SubBytes+MC)   │         ┌────────────────────┐     │
+ │  └──────────────────┘         │  Scoreboard        │     │
+ │                               │ • sb_out @ sb_valid│     │
+ │   ┌────────────────────────┐  │ • data_out @ done  │     │
+ │   │ Assertions (SVA)       │  └────────────────────┘     │
+ │   │ Functional Coverage    │                             │
+ │   └────────────────────────┘                             │
  └──────────────────────────────────────────────────────────┘
 ```
 
@@ -312,8 +312,8 @@ DDLS PROJECT FINAL/
 │   └── wave.do                 # ModelSim waveform script
 │
 └── DOC/
-    ├── Final_Project_Report.pdf
-    └── README.md
+│   └── Final_Project_Report.pdf
+└── README.md
 ```
 
 ---
@@ -391,4 +391,4 @@ Replace `-sdfmax`/`+maxdelays` with `-sdfmin`/`+mindelays` for best-case (hold) 
 
 ---
 
-*Ben-Gurion University of the Negev — Digital Design and Logic Synthesis, 2026*
+*Ben-Gurion University of the Negev - Digital Design and Logic Synthesis, 2026*
