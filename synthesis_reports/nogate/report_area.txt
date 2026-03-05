@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : Top
+Version: W-2024.09
+Date   : Mon Jan  5 20:59:25 2026
+****************************************
+
+Library(s) Used:
+
+    slow (File: /users_home/adishl/LibraryFiles/db/slow.db)
+
+Number of ports:                          392
+Number of nets:                          9718
+Number of cells:                         9430
+Number of combinational cells:           8647
+Number of sequential cells:               783
+Number of macros/black boxes:               0
+Number of buf/inv:                       1812
+Number of references:                     130
+
+Combinational area:             116903.003226
+Buf/Inv area:                    13115.995393
+Noncombinational area:           55866.887436
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                172769.890662
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  ------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-   Black-
+                                  Total        Total    national     national    boxes   Design
+--------------------------------  -----------  -------  -----------  ----------  ------  ---------
+Top                               172769.8907    100.0  116903.0032  55866.8874  0.0000  Top
+--------------------------------  -----------  -------  -----------  ----------  ------  ---------
+Total                                                   116903.0032  55866.8874  0.0000
+
+1

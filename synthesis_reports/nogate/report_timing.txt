@@ -1,0 +1,693 @@
+=============================
+TIMING REPORT - MAX (SETUP)
+=============================
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : Top
+Version: W-2024.09
+Date   : Mon Jan  5 20:59:25 2026
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: R_682 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sub_bytes/u_output_reg/data_out_reg[72]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_682/CK (DFFSX4)                                       0.00       0.00 r
+  R_682/Q (DFFSX4)                                        0.44       0.44 f
+  U7509/Y (NOR2X2)                                        0.17       0.61 r
+  U10092/Y (NAND2X4)                                      0.08       0.69 f
+  U10093/Y (INVX4)                                        0.10       0.79 r
+  U10123/Y (NAND2X1)                                      0.12       0.91 f
+  U8965/Y (NAND2X1)                                       0.16       1.07 r
+  U12439/Y (NOR2XL)                                       0.08       1.15 f
+  U8964/Y (NAND2BX1)                                      0.13       1.28 r
+  U12444/Y (NOR3X2)                                       0.07       1.35 f
+  U7554/Y (CLKINVX2)                                      0.09       1.44 r
+  U12451/Y (NOR4X2)                                       0.06       1.50 f
+  U12465/Y (AOI211X1)                                     0.28       1.78 r
+  U12485/Y (NOR3X1)                                       0.08       1.86 f
+  U12486/Y (OAI2BB1XL)                                    0.18       2.03 f
+  u_sub_bytes/u_output_reg/data_out_reg[72]/D (DFFSX1)
+                                                          0.00       2.03 f
+  data arrival time                                                  2.03
+
+  clock clk (rise edge)                                   2.40       2.40
+  clock network delay (ideal)                             0.00       2.40
+  clock uncertainty                                      -0.10       2.30
+  u_sub_bytes/u_output_reg/data_out_reg[72]/CK (DFFSX1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.26       2.04
+  data required time                                                 2.04
+  --------------------------------------------------------------------------
+  data required time                                                 2.04
+  data arrival time                                                 -2.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: R_429 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_425 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_429/CK (DFFSX4)                        0.00       0.00 r
+  R_429/Q (DFFSX4)                         0.52       0.52 r
+  U11253/Y (NAND3BX4)                      0.17       0.70 r
+  U11330/Y (CLKINVX3)                      0.15       0.84 f
+  U11331/Y (NAND2X2)                       0.15       1.00 r
+  U12123/Y (NAND4XL)                       0.12       1.12 f
+  U7353/Y (NAND4BXL)                       0.36       1.48 f
+  U12136/Y (NOR4BX1)                       0.26       1.74 r
+  U12137/Y (AOI211XL)                      0.09       1.83 f
+  U12138/Y (INVXL)                         0.11       1.94 r
+  U12154/Y (NAND3X1)                       0.09       2.03 f
+  R_425/D (DFFRHQXL)                       0.00       2.03 f
+  data arrival time                                   2.03
+
+  clock clk (rise edge)                    2.40       2.40
+  clock network delay (ideal)              0.00       2.40
+  clock uncertainty                       -0.10       2.30
+  R_425/CK (DFFRHQXL)                      0.00       2.30 r
+  library setup time                      -0.27       2.03
+  data required time                                  2.03
+  -----------------------------------------------------------
+  data required time                                  2.03
+  data arrival time                                  -2.03
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: R_827 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_mix_columns/u_output_reg/data_out_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_827/CK (DFFSX1)                                       0.00       0.00 r
+  R_827/Q (DFFSX1)                                        0.58       0.58 r
+  U8329/Y (MX2X2)                                         0.28       0.85 r
+  U15495/Y (XNOR2X1)                                      0.36       1.21 r
+  U15496/Y (XNOR2X1)                                      0.31       1.53 r
+  U15497/Y (XNOR2X1)                                      0.29       1.81 r
+  U15498/Y (MXI2X1)                                       0.14       1.96 r
+  U15499/Y (AOI21XL)                                      0.07       2.02 f
+  u_mix_columns/u_output_reg/data_out_reg[9]/D (DFFSX1)
+                                                          0.00       2.02 f
+  data arrival time                                                  2.02
+
+  clock clk (rise edge)                                   2.40       2.40
+  clock network delay (ideal)                             0.00       2.40
+  clock uncertainty                                      -0.10       2.30
+  u_mix_columns/u_output_reg/data_out_reg[9]/CK (DFFSX1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.28       2.02
+  data required time                                                 2.02
+  --------------------------------------------------------------------------
+  data required time                                                 2.02
+  data arrival time                                                 -2.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: R_591 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sub_bytes/u_output_reg/data_out_reg[54]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_591/CK (DFFSX4)                                       0.00       0.00 r
+  R_591/Q (DFFSX4)                                        0.45       0.45 f
+  U7496/Y (NAND2X1)                                       0.17       0.62 r
+  U9038/Y (CLKINVX2)                                      0.16       0.79 f
+  U9055/Y (NAND2X1)                                       0.21       1.00 r
+  U8363/Y (NAND2XL)                                       0.12       1.12 f
+  U11754/Y (OR4X2)                                        0.37       1.49 f
+  U9022/Y (NOR4BXL)                                       0.22       1.70 r
+  U8362/Y (OAI2BB1X1)                                     0.21       1.92 r
+  U15380/Y (NAND4X1)                                      0.12       2.04 f
+  U15381/Y (MXI2X1)                                       0.13       2.18 r
+  u_sub_bytes/u_output_reg/data_out_reg[54]/D (DFFSX1)
+                                                          0.00       2.18 r
+  data arrival time                                                  2.18
+
+  clock clk (rise edge)                                   2.40       2.40
+  clock network delay (ideal)                             0.00       2.40
+  clock uncertainty                                      -0.10       2.30
+  u_sub_bytes/u_output_reg/data_out_reg[54]/CK (DFFSX1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.12       2.18
+  data required time                                                 2.18
+  --------------------------------------------------------------------------
+  data required time                                                 2.18
+  data arrival time                                                 -2.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: R_891 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_315 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_891/CK (DFFSX4)                        0.00       0.00 r
+  R_891/Q (DFFSX4)                         0.54       0.54 r
+  U8482/Y (NOR2X1)                         0.08       0.62 f
+  U8481/Y (NAND2X2)                        0.11       0.73 r
+  U8419/Y (INVX4)                          0.08       0.80 f
+  U8550/Y (NAND2X1)                        0.18       0.99 r
+  U12737/Y (NAND4XL)                       0.20       1.19 f
+  U12738/Y (NOR4X1)                        0.34       1.53 r
+  U12745/Y (NAND4XL)                       0.16       1.69 f
+  U12746/Y (AOI22X1)                       0.24       1.92 r
+  U7774/Y (OAI21XL)                        0.11       2.03 f
+  R_315/D (DFFSX1)                         0.00       2.03 f
+  data arrival time                                   2.03
+
+  clock clk (rise edge)                    2.40       2.40
+  clock network delay (ideal)              0.00       2.40
+  clock uncertainty                       -0.10       2.30
+  R_315/CK (DFFSX1)                        0.00       2.30 r
+  library setup time                      -0.27       2.03
+  data required time                                  2.03
+  -----------------------------------------------------------
+  data required time                                  2.03
+  data arrival time                                  -2.03
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: R_618 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_49 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_618/CK (DFFSX4)                        0.00       0.00 r
+  R_618/Q (DFFSX4)                         0.52       0.52 r
+  U12903/Y (NOR2X1)                        0.06       0.59 f
+  U9060/Y (NAND2X2)                        0.10       0.69 r
+  U7455/Y (NOR2XL)                         0.12       0.80 f
+  U7412/Y (NAND2X1)                        0.18       0.98 r
+  U8158/Y (AND3X1)                         0.25       1.24 r
+  U8530/Y (NAND2X1)                        0.08       1.32 f
+  U8614/Y (OR2X2)                          0.20       1.53 f
+  U8513/Y (NOR3BX1)                        0.18       1.70 r
+  U8512/Y (OAI2BB1XL)                      0.19       1.90 r
+  U7769/Y (NAND4XL)                        0.13       2.03 f
+  R_49/D (DFFSX1)                          0.00       2.03 f
+  data arrival time                                   2.03
+
+  clock clk (rise edge)                    2.40       2.40
+  clock network delay (ideal)              0.00       2.40
+  clock uncertainty                       -0.10       2.30
+  R_49/CK (DFFSX1)                         0.00       2.30 r
+  library setup time                      -0.27       2.03
+  data required time                                  2.03
+  -----------------------------------------------------------
+  data required time                                  2.03
+  data arrival time                                  -2.03
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: R_848 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_mix_columns/u_output_reg/data_out_reg[116]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_848/CK (DFFSX1)                                       0.00       0.00 r
+  R_848/Q (DFFSX1)                                        0.55       0.55 r
+  U8978/Y (NAND3X1)                                       0.09       0.64 f
+  U8331/Y (MX2X1)                                         0.32       0.96 f
+  U8339/Y (XNOR2X1)                                       0.38       1.35 r
+  U15913/Y (XNOR2X1)                                      0.32       1.67 r
+  U15914/Y (XNOR2X1)                                      0.27       1.93 r
+  U15915/Y (MXI2X1)                                       0.09       2.02 f
+  u_mix_columns/u_output_reg/data_out_reg[116]/D (DFFSX1)
+                                                          0.00       2.02 f
+  data arrival time                                                  2.02
+
+  clock clk (rise edge)                                   2.40       2.40
+  clock network delay (ideal)                             0.00       2.40
+  clock uncertainty                                      -0.10       2.30
+  u_mix_columns/u_output_reg/data_out_reg[116]/CK (DFFSX1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.28       2.02
+  data required time                                                 2.02
+  --------------------------------------------------------------------------
+  data required time                                                 2.02
+  data arrival time                                                 -2.02
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: R_880 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_644 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_880/CK (DFFSX2)                        0.00       0.00 r
+  R_880/QN (DFFSX2)                        0.46       0.46 f
+  U7489/Y (NOR3BX2)                        0.20       0.66 f
+  U10463/Y (CLKINVX2)                      0.08       0.74 r
+  U10464/Y (NOR2X1)                        0.09       0.83 f
+  U10559/Y (NOR2XL)                        0.27       1.09 r
+  U10560/Y (INVX1)                         0.09       1.18 f
+  U10562/Y (NOR3XL)                        0.23       1.41 r
+  U10563/Y (NAND4XL)                       0.15       1.57 f
+  U10577/Y (OAI21XL)                       0.17       1.73 r
+  U10578/Y (AND2X1)                        0.20       1.93 r
+  U10579/Y (NAND3X1)                       0.09       2.03 f
+  R_644/D (DFFRHQXL)                       0.00       2.03 f
+  data arrival time                                   2.03
+
+  clock clk (rise edge)                    2.40       2.40
+  clock network delay (ideal)              0.00       2.40
+  clock uncertainty                       -0.10       2.30
+  R_644/CK (DFFRHQXL)                      0.00       2.30 r
+  library setup time                      -0.27       2.03
+  data required time                                  2.03
+  -----------------------------------------------------------
+  data required time                                  2.03
+  data arrival time                                  -2.03
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: R_165 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_488 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_165/CK (DFFSX2)                        0.00       0.00 r
+  R_165/Q (DFFSX2)                         0.60       0.60 r
+  U12187/Y (NOR2XL)                        0.16       0.75 f
+  U12188/Y (NOR2XL)                        0.32       1.07 r
+  U12242/Y (NAND3XL)                       0.15       1.22 f
+  U12243/Y (NOR4X1)                        0.29       1.51 r
+  U7833/Y (INVXL)                          0.08       1.59 f
+  U12256/Y (OAI21X1)                       0.16       1.75 r
+  U12259/Y (NAND4X1)                       0.12       1.87 f
+  U12260/Y (CLKINVX2)                      0.07       1.94 r
+  U12308/Y (NAND4X1)                       0.09       2.03 f
+  R_488/D (DFFSX1)                         0.00       2.03 f
+  data arrival time                                   2.03
+
+  clock clk (rise edge)                    2.40       2.40
+  clock network delay (ideal)              0.00       2.40
+  clock uncertainty                       -0.10       2.30
+  R_488/CK (DFFSX1)                        0.00       2.30 r
+  library setup time                      -0.27       2.03
+  data required time                                  2.03
+  -----------------------------------------------------------
+  data required time                                  2.03
+  data arrival time                                  -2.03
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: R_347 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_944 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_347/CK (DFFSX4)                        0.00       0.00 r
+  R_347/QN (DFFSX4)                        0.44       0.44 f
+  U7495/Y (NAND2X2)                        0.16       0.59 r
+  U13328/Y (INVXL)                         0.14       0.73 f
+  U13493/Y (NAND2XL)                       0.17       0.90 r
+  U13494/Y (INVX1)                         0.08       0.98 f
+  U13497/Y (NOR2X1)                        0.21       1.19 r
+  U14176/Y (NAND2XL)                       0.13       1.32 f
+  U14444/Y (NOR4BXL)                       0.27       1.58 r
+  U14445/Y (NAND3XL)                       0.13       1.71 f
+  U14446/Y (OAI21XL)                       0.18       1.90 r
+  U14447/Y (OAI211XL)                      0.13       2.03 f
+  R_944/D (DFFSX1)                         0.00       2.03 f
+  data arrival time                                   2.03
+
+  clock clk (rise edge)                    2.40       2.40
+  clock network delay (ideal)              0.00       2.40
+  clock uncertainty                       -0.10       2.30
+  R_944/CK (DFFSX1)                        0.00       2.30 r
+  library setup time                      -0.27       2.03
+  data required time                                  2.03
+  -----------------------------------------------------------
+  data required time                                  2.03
+  data arrival time                                  -2.03
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+
+
+=============================
+TIMING REPORT - MIN (HOLD)
+=============================
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : Top
+Version: W-2024.09
+Date   : Mon Jan  5 20:59:25 2026
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: R_593 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_592 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_593/CK (DFFRHQX2)                      0.00       0.00 r
+  R_593/Q (DFFRHQX2)                       0.27       0.27 f
+  U8206/Y (MXI2X1)                         0.15       0.42 r
+  R_592/D (DFFSX4)                         0.00       0.42 r
+  data arrival time                                   0.42
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  R_592/CK (DFFSX4)                        0.00       0.10 r
+  library hold time                       -0.09       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.42
+  -----------------------------------------------------------
+  slack (MET)                                         0.41
+
+
+  Startpoint: R_520 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_551 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_520/CK (DFFRHQX2)                      0.00       0.00 r
+  R_520/Q (DFFRHQX2)                       0.27       0.27 f
+  U8213/Y (MXI2X1)                         0.16       0.43 r
+  R_551/D (DFFSX4)                         0.00       0.43 r
+  data arrival time                                   0.43
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  R_551/CK (DFFSX4)                        0.00       0.10 r
+  library hold time                       -0.09       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.43
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: R_187 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_187 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_187/CK (DFFRHQX2)                      0.00       0.00 r
+  R_187/Q (DFFRHQX2)                       0.27       0.27 f
+  U13559/Y (MXI2X1)                        0.16       0.43 r
+  U8116/Y (INVXL)                          0.06       0.49 f
+  R_187/D (DFFRHQX2)                       0.00       0.49 f
+  data arrival time                                   0.49
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  R_187/CK (DFFRHQX2)                      0.00       0.10 r
+  library hold time                       -0.03       0.07
+  data required time                                  0.07
+  -----------------------------------------------------------
+  data required time                                  0.07
+  data arrival time                                  -0.49
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: R_187 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_186 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_187/CK (DFFRHQX2)                      0.00       0.00 r
+  R_187/Q (DFFRHQX2)                       0.27       0.27 f
+  U13559/Y (MXI2X1)                        0.16       0.43 r
+  R_186/D (DFFSX4)                         0.00       0.43 r
+  data arrival time                                   0.43
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  R_186/CK (DFFSX4)                        0.00       0.10 r
+  library hold time                       -0.09       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.43
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: R_187 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_32 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_187/CK (DFFRHQX2)                      0.00       0.00 r
+  R_187/Q (DFFRHQX2)                       0.27       0.27 f
+  U13559/Y (MXI2X1)                        0.16       0.43 r
+  R_32/D (DFFSX4)                          0.00       0.43 r
+  data arrival time                                   0.43
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  R_32/CK (DFFSX4)                         0.00       0.10 r
+  library hold time                       -0.09       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.43
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: R_520 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_519 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_520/CK (DFFRHQX2)                      0.00       0.00 r
+  R_520/Q (DFFRHQX2)                       0.27       0.27 f
+  U8213/Y (MXI2X1)                         0.16       0.43 r
+  R_519/D (DFFSX1)                         0.00       0.43 r
+  data arrival time                                   0.43
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  R_519/CK (DFFSX1)                        0.00       0.10 r
+  library hold time                       -0.10       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.43
+  -----------------------------------------------------------
+  slack (MET)                                         0.43
+
+
+  Startpoint: R_900 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_899 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_900/CK (DFFRHQX2)                      0.00       0.00 r
+  R_900/Q (DFFRHQX2)                       0.26       0.26 f
+  U13081/Y (MXI2X1)                        0.18       0.44 r
+  R_899/D (DFFSX4)                         0.00       0.44 r
+  data arrival time                                   0.44
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  R_899/CK (DFFSX4)                        0.00       0.10 r
+  library hold time                       -0.09       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.44
+  -----------------------------------------------------------
+  slack (MET)                                         0.43
+
+
+  Startpoint: R_502 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_501 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_502/CK (DFFRHQX2)                      0.00       0.00 r
+  R_502/Q (DFFRHQX2)                       0.29       0.29 f
+  U13569/Y (MXI2X1)                        0.16       0.45 r
+  R_501/D (DFFSX4)                         0.00       0.45 r
+  data arrival time                                   0.45
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  R_501/CK (DFFSX4)                        0.00       0.10 r
+  library hold time                       -0.09       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.45
+  -----------------------------------------------------------
+  slack (MET)                                         0.43
+
+
+  Startpoint: R_593 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_593 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_593/CK (DFFRHQX2)                      0.00       0.00 r
+  R_593/Q (DFFRHQX2)                       0.27       0.27 f
+  U8206/Y (MXI2X1)                         0.15       0.42 r
+  U13605/Y (INVX1)                         0.09       0.51 f
+  R_593/D (DFFRHQX2)                       0.00       0.51 f
+  data arrival time                                   0.51
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  R_593/CK (DFFRHQX2)                      0.00       0.10 r
+  library hold time                       -0.03       0.07
+  data required time                                  0.07
+  -----------------------------------------------------------
+  data required time                                  0.07
+  data arrival time                                  -0.51
+  -----------------------------------------------------------
+  slack (MET)                                         0.44
+
+
+  Startpoint: R_446 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_890 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_446/CK (DFFRHQX2)                      0.00       0.00 r
+  R_446/Q (DFFRHQX2)                       0.28       0.28 f
+  U13098/Y (MXI2X1)                        0.17       0.45 r
+  R_890/D (DFFSX4)                         0.00       0.45 r
+  data arrival time                                   0.45
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  R_890/CK (DFFSX4)                        0.00       0.10 r
+  library hold time                       -0.09       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.45
+  -----------------------------------------------------------
+  slack (MET)                                         0.44
+
+
+1

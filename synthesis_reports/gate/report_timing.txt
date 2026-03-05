@@ -1,0 +1,794 @@
+=============================
+TIMING REPORT - MAX (SETUP)
+=============================
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : Top
+Version: W-2024.09
+Date   : Mon Jan  5 21:02:04 2026
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: u_control_fsm/u_state_reg/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gate_u_mix_columns/u_output_reg/data_out_reg/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_control_fsm/u_state_reg/data_out_reg[1]/CK (DFFSX1)
+                                                          0.00       0.00 r
+  u_control_fsm/u_state_reg/data_out_reg[1]/QN (DFFSX1)
+                                                          0.54       0.54 f
+  U9881/Y (BUFX12)                                        0.29       0.83 f
+  U14710/Y (NAND2X1)                                      0.14       0.97 r
+  U14711/Y (INVX1)                                        0.05       1.02 f
+  clk_gate_u_mix_columns/u_output_reg/data_out_reg/EN (SNPS_CLOCK_GATE_HIGH_Top_1)
+                                                          0.00       1.02 f
+  clk_gate_u_mix_columns/u_output_reg/data_out_reg/test_or/Y (OR2X2)
+                                                          0.19       1.21 f
+  clk_gate_u_mix_columns/u_output_reg/data_out_reg/latch/D (TLATNXL)
+                                                          0.00       1.21 f
+  data arrival time                                                  1.21
+
+  clock clk (fall edge)                                   1.20       1.20
+  clock network delay (ideal)                             0.00       1.20
+  clock uncertainty                                      -0.10       1.10
+  clk_gate_u_mix_columns/u_output_reg/data_out_reg/latch/GN (TLATNXL)
+                                                          0.00       1.10 f
+  time borrowed from endpoint                             0.11       1.21
+  data required time                                                 1.21
+  --------------------------------------------------------------------------
+  data required time                                                 1.21
+  data arrival time                                                 -1.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 1.20   
+  library setup time                                     -0.11   
+  --------------------------------------------------------------
+  max time borrow                                         1.09   
+  --------------------------------------------------------------
+  actual time borrow                                      0.11   
+  clock uncertainty                                      -0.10   
+  --------------------------------------------------------------
+  time given to startpoint                                0.01   
+  --------------------------------------------------------------
+
+
+  Startpoint: u_control_fsm/u_state_reg/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gate_u_sub_bytes/u_output_reg/data_out_reg/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_control_fsm/u_state_reg/data_out_reg[1]/CK (DFFSX1)
+                                                          0.00       0.00 r
+  u_control_fsm/u_state_reg/data_out_reg[1]/QN (DFFSX1)
+                                                          0.54       0.54 f
+  U9881/Y (BUFX12)                                        0.29       0.83 f
+  U14708/Y (NAND2X1)                                      0.12       0.95 r
+  U14709/Y (INVX1)                                        0.05       1.00 f
+  clk_gate_u_sub_bytes/u_output_reg/data_out_reg/EN (SNPS_CLOCK_GATE_HIGH_Top_2)
+                                                          0.00       1.00 f
+  clk_gate_u_sub_bytes/u_output_reg/data_out_reg/test_or/Y (OR2X2)
+                                                          0.19       1.19 f
+  clk_gate_u_sub_bytes/u_output_reg/data_out_reg/latch/D (TLATNXL)
+                                                          0.00       1.19 f
+  data arrival time                                                  1.19
+
+  clock clk (fall edge)                                   1.20       1.20
+  clock network delay (ideal)                             0.00       1.20
+  clock uncertainty                                      -0.10       1.10
+  clk_gate_u_sub_bytes/u_output_reg/data_out_reg/latch/GN (TLATNXL)
+                                                          0.00       1.10 f
+  time borrowed from endpoint                             0.09       1.19
+  data required time                                                 1.19
+  --------------------------------------------------------------------------
+  data required time                                                 1.19
+  data arrival time                                                 -1.19
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 1.20   
+  library setup time                                     -0.11   
+  --------------------------------------------------------------
+  max time borrow                                         1.09   
+  --------------------------------------------------------------
+  actual time borrow                                      0.09   
+  clock uncertainty                                      -0.10   
+  --------------------------------------------------------------
+  time given to startpoint                               -0.01   
+  --------------------------------------------------------------
+
+
+  Startpoint: u_control_fsm/u_state_reg/data_out_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gate_u_input_reg/data_out_reg/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_control_fsm/u_state_reg/data_out_reg[1]/CK (DFFSX1)
+                                                          0.00       0.00 r
+  u_control_fsm/u_state_reg/data_out_reg[1]/QN (DFFSX1)
+                                                          0.54       0.54 f
+  U14705/Y (BUFX1)                                        0.17       0.72 f
+  U14706/Y (NAND2BX1)                                     0.18       0.90 f
+  U14707/Y (NOR2X1)                                       0.15       1.04 r
+  clk_gate_u_input_reg/data_out_reg/EN (SNPS_CLOCK_GATE_HIGH_Top_3)
+                                                          0.00       1.04 r
+  clk_gate_u_input_reg/data_out_reg/test_or/Y (OR2X2)     0.14       1.18 r
+  clk_gate_u_input_reg/data_out_reg/latch/D (TLATNXL)     0.00       1.18 r
+  data arrival time                                                  1.18
+
+  clock clk (fall edge)                                   1.20       1.20
+  clock network delay (ideal)                             0.00       1.20
+  clock uncertainty                                      -0.10       1.10
+  clk_gate_u_input_reg/data_out_reg/latch/GN (TLATNXL)
+                                                          0.00       1.10 f
+  time borrowed from endpoint                             0.08       1.18
+  data required time                                                 1.18
+  --------------------------------------------------------------------------
+  data required time                                                 1.18
+  data arrival time                                                 -1.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 1.20   
+  library setup time                                     -0.10   
+  --------------------------------------------------------------
+  max time borrow                                         1.10   
+  --------------------------------------------------------------
+  actual time borrow                                      0.08   
+  clock uncertainty                                      -0.10   
+  --------------------------------------------------------------
+  time given to startpoint                               -0.02   
+  --------------------------------------------------------------
+
+
+  Startpoint: R_6 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sub_bytes/u_output_reg/data_out_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_6/CK (DFFSX4)                                         0.00       0.00 r
+  R_6/QN (DFFSX4)                                         0.44       0.44 f
+  U9401/Y (NAND2X1)                                       0.15       0.59 r
+  U7511/Y (OR2XL)                                         0.23       0.82 r
+  U12013/Y (NOR2X1)                                       0.11       0.93 f
+  U12014/Y (NOR2XL)                                       0.24       1.17 r
+  U13064/Y (NAND2X1)                                      0.10       1.28 f
+  U6986/Y (NOR4BXL)                                       0.26       1.54 r
+  U13067/Y (NAND4XL)                                      0.15       1.69 f
+  U10603/Y (OAI21XL)                                      0.19       1.88 r
+  U10482/Y (OAI21XL)                                      0.12       2.00 f
+  U10481/Y (AOI211XL)                                     0.18       2.17 r
+  u_sub_bytes/u_output_reg/data_out_reg[28]/D (DFFSX1)
+                                                          0.00       2.17 r
+  data arrival time                                                  2.17
+
+  clock clk (rise edge)                                   2.40       2.40
+  clock network delay (ideal)                             0.00       2.40
+  clock uncertainty                                      -0.10       2.30
+  u_sub_bytes/u_output_reg/data_out_reg[28]/CK (DFFSX1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.13       2.17
+  data required time                                                 2.17
+  --------------------------------------------------------------------------
+  data required time                                                 2.17
+  data arrival time                                                 -2.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_input_reg/data_out_reg[45]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sub_bytes/u_output_reg/data_out_reg[45]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_input_reg/data_out_reg[45]/CK (DFFSX4)                0.00       0.00 r
+  u_input_reg/data_out_reg[45]/Q (DFFSX4)                 0.58       0.58 r
+  U7290/Y (NOR2X1)                                        0.09       0.67 f
+  U7289/Y (NAND2X2)                                       0.12       0.79 r
+  U11587/Y (CLKINVX3)                                     0.08       0.87 f
+  U10550/Y (NAND2X1)                                      0.17       1.05 r
+  U9540/Y (NAND2XL)                                       0.13       1.18 f
+  U11670/Y (NOR2XL)                                       0.18       1.36 r
+  U8388/Y (NAND4BX1)                                      0.19       1.54 f
+  U9661/Y (NOR4X1)                                        0.30       1.85 r
+  U14540/Y (OAI22XL)                                      0.14       1.99 f
+  U7087/Y (AOI211XL)                                      0.18       2.17 r
+  u_sub_bytes/u_output_reg/data_out_reg[45]/D (DFFSX1)
+                                                          0.00       2.17 r
+  data arrival time                                                  2.17
+
+  clock clk (rise edge)                                   2.40       2.40
+  clock network delay (ideal)                             0.00       2.40
+  clock uncertainty                                      -0.10       2.30
+  u_sub_bytes/u_output_reg/data_out_reg[45]/CK (DFFSX1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.13       2.17
+  data required time                                                 2.17
+  --------------------------------------------------------------------------
+  data required time                                                 2.17
+  data arrival time                                                 -2.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: R_275 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sub_bytes/u_output_reg/data_out_reg[80]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_275/CK (DFFSX4)                                       0.00       0.00 r
+  R_275/Q (DFFSX4)                                        0.57       0.57 r
+  U10871/Y (NOR2X1)                                       0.08       0.65 f
+  U10872/Y (NAND2BX2)                                     0.11       0.76 r
+  U10873/Y (INVX4)                                        0.07       0.83 f
+  U7012/Y (NAND2X1)                                       0.23       1.06 r
+  U11546/Y (NAND4XL)                                      0.17       1.23 f
+  U11548/Y (NOR4BX1)                                      0.26       1.49 r
+  U11551/Y (NAND4X1)                                      0.17       1.66 f
+  U13152/Y (INVXL)                                        0.11       1.78 r
+  U9822/Y (AOI31XL)                                       0.10       1.88 f
+  U13159/Y (NAND2BX1)                                     0.19       2.07 f
+  U13160/Y (NOR2X1)                                       0.11       2.18 r
+  u_sub_bytes/u_output_reg/data_out_reg[80]/D (DFFSX1)
+                                                          0.00       2.18 r
+  data arrival time                                                  2.18
+
+  clock clk (rise edge)                                   2.40       2.40
+  clock network delay (ideal)                             0.00       2.40
+  clock uncertainty                                      -0.10       2.30
+  u_sub_bytes/u_output_reg/data_out_reg[80]/CK (DFFSX1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.12       2.18
+  data required time                                                 2.18
+  --------------------------------------------------------------------------
+  data required time                                                 2.18
+  data arrival time                                                 -2.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: R_21 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_194 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_21/CK (DFFSX4)                         0.00       0.00 r
+  R_21/Q (DFFSX4)                          0.58       0.58 r
+  U11339/Y (NOR2X2)                        0.06       0.64 f
+  U9400/Y (NAND2X2)                        0.12       0.76 r
+  U11340/Y (INVX4)                         0.06       0.82 f
+  U8221/Y (NAND2X1)                        0.13       0.95 r
+  U11369/Y (INVXL)                         0.11       1.06 f
+  U11370/Y (NOR2XL)                        0.19       1.25 r
+  U12777/Y (NAND2XL)                       0.11       1.36 f
+  U12778/Y (INVXL)                         0.10       1.46 r
+  U8285/Y (NAND4XL)                        0.19       1.65 f
+  U10160/Y (OAI31XL)                       0.25       1.90 r
+  U10159/Y (OAI21XL)                       0.13       2.03 f
+  R_194/D (DFFRHQXL)                       0.00       2.03 f
+  data arrival time                                   2.03
+
+  clock clk (rise edge)                    2.40       2.40
+  clock network delay (ideal)              0.00       2.40
+  clock uncertainty                       -0.10       2.30
+  R_194/CK (DFFRHQXL)                      0.00       2.30 r
+  library setup time                      -0.27       2.03
+  data required time                                  2.03
+  -----------------------------------------------------------
+  data required time                                  2.03
+  data arrival time                                  -2.03
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: R_212 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_mix_columns/u_output_reg/data_out_reg[21]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_212/CK (DFFSX1)                                       0.00       0.00 r
+  R_212/Q (DFFSX1)                                        0.48       0.48 f
+  U9256/Y (OAI22XL)                                       0.24       0.72 r
+  U7367/Y (AOI211X1)                                      0.12       0.83 f
+  U7366/Y (INVX1)                                         0.18       1.02 r
+  U9066/Y (XOR2XL)                                        0.43       1.44 r
+  U10612/Y (XOR2XL)                                       0.35       1.80 r
+  U10391/Y (XNOR2XL)                                      0.23       2.03 f
+  u_mix_columns/u_output_reg/data_out_reg[21]/D (DFFSX1)
+                                                          0.00       2.03 f
+  data arrival time                                                  2.03
+
+  clock clk (rise edge)                                   2.40       2.40
+  clock network delay (ideal)                             0.00       2.40
+  clock uncertainty                                      -0.10       2.30
+  u_mix_columns/u_output_reg/data_out_reg[21]/CK (DFFSX1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.27       2.03
+  data required time                                                 2.03
+  --------------------------------------------------------------------------
+  data required time                                                 2.03
+  data arrival time                                                 -2.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: R_344 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sub_bytes/u_output_reg/data_out_reg[57]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_344/CK (DFFSX2)                                       0.00       0.00 r
+  R_344/Q (DFFSX2)                                        0.61       0.61 r
+  U7513/Y (AND2X2)                                        0.23       0.84 r
+  U7180/Y (INVX2)                                         0.06       0.90 f
+  U8536/Y (NOR2X1)                                        0.19       1.08 r
+  U9733/Y (INVX1)                                         0.15       1.24 f
+  U12299/Y (NAND4X1)                                      0.18       1.42 r
+  U12300/Y (INVX1)                                        0.06       1.49 f
+  U7072/Y (NAND4X1)                                       0.13       1.61 r
+  U7222/Y (NOR2X1)                                        0.08       1.69 f
+  U7379/Y (NAND4X1)                                       0.10       1.79 r
+  U12311/Y (NAND2X1)                                      0.06       1.85 f
+  U7084/Y (NOR3BX1)                                       0.18       2.03 f
+  u_sub_bytes/u_output_reg/data_out_reg[57]/D (DFFSX1)
+                                                          0.00       2.03 f
+  data arrival time                                                  2.03
+
+  clock clk (rise edge)                                   2.40       2.40
+  clock network delay (ideal)                             0.00       2.40
+  clock uncertainty                                      -0.10       2.30
+  u_sub_bytes/u_output_reg/data_out_reg[57]/CK (DFFSX1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.27       2.03
+  data required time                                                 2.03
+  --------------------------------------------------------------------------
+  data required time                                                 2.03
+  data arrival time                                                 -2.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: u_input_reg/data_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_sub_bytes/u_output_reg/data_out_reg[7]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_input_reg/data_out_reg[0]/CK (DFFSX4)                 0.00       0.00 r
+  u_input_reg/data_out_reg[0]/QN (DFFSX4)                 0.47       0.47 f
+  U8161/Y (NOR2X2)                                        0.16       0.63 r
+  U7317/Y (NAND2X1)                                       0.11       0.74 f
+  U7031/Y (INVX1)                                         0.22       0.96 r
+  U11948/Y (NAND2X1)                                      0.17       1.13 f
+  U7125/Y (NAND3X1)                                       0.13       1.26 r
+  U10595/Y (NAND4BXL)                                     0.23       1.48 r
+  U9235/Y (INVXL)                                         0.10       1.59 f
+  U9234/Y (NOR4BX1)                                       0.21       1.79 f
+  U7204/Y (OAI21X1)                                       0.16       1.95 r
+  U10501/Y (AOI211XL)                                     0.07       2.03 f
+  u_sub_bytes/u_output_reg/data_out_reg[7]/D (DFFSX1)     0.00       2.03 f
+  data arrival time                                                  2.03
+
+  clock clk (rise edge)                                   2.40       2.40
+  clock network delay (ideal)                             0.00       2.40
+  clock uncertainty                                      -0.10       2.30
+  u_sub_bytes/u_output_reg/data_out_reg[7]/CK (DFFSX1)
+                                                          0.00       2.30 r
+  library setup time                                     -0.27       2.03
+  data required time                                                 2.03
+  --------------------------------------------------------------------------
+  data required time                                                 2.03
+  data arrival time                                                 -2.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
+
+
+=============================
+TIMING REPORT - MIN (HOLD)
+=============================
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : Top
+Version: W-2024.09
+Date   : Mon Jan  5 21:02:04 2026
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: clk_gate_u_input_reg/data_out_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: clk_gate_u_input_reg/data_out_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   1.20       1.20
+  clock network delay (ideal)                             0.00       1.20
+  clk_gate_u_input_reg/data_out_reg/latch/GN (TLATNXL)
+                                                          0.00       1.20 f
+  clk_gate_u_input_reg/data_out_reg/latch/Q (TLATNXL)     0.27       1.47 r
+  clk_gate_u_input_reg/data_out_reg/main_gate/A (AND2X1)
+                                                          0.00       1.47 r
+  data arrival time                                                  1.47
+
+  clock clk (fall edge)                                   1.20       1.20
+  clock network delay (ideal)                             0.00       1.20
+  clock uncertainty                                       0.10       1.30
+  clk_gate_u_input_reg/data_out_reg/main_gate/B (AND2X1)
+                                                          0.00       1.30 f
+  clock gating hold time                                  0.00       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -1.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.17
+
+
+  Startpoint: clk_gate_u_sub_bytes/u_output_reg/data_out_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: clk_gate_u_sub_bytes/u_output_reg/data_out_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   1.20       1.20
+  clock network delay (ideal)                             0.00       1.20
+  clk_gate_u_sub_bytes/u_output_reg/data_out_reg/latch/GN (TLATNXL)
+                                                          0.00       1.20 f
+  clk_gate_u_sub_bytes/u_output_reg/data_out_reg/latch/Q (TLATNXL)
+                                                          0.27       1.47 r
+  clk_gate_u_sub_bytes/u_output_reg/data_out_reg/main_gate/A (AND2X1)
+                                                          0.00       1.47 r
+  data arrival time                                                  1.47
+
+  clock clk (fall edge)                                   1.20       1.20
+  clock network delay (ideal)                             0.00       1.20
+  clock uncertainty                                       0.10       1.30
+  clk_gate_u_sub_bytes/u_output_reg/data_out_reg/main_gate/B (AND2X1)
+                                                          0.00       1.30 f
+  clock gating hold time                                  0.00       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -1.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.17
+
+
+  Startpoint: clk_gate_u_mix_columns/u_output_reg/data_out_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: clk_gate_u_mix_columns/u_output_reg/data_out_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   1.20       1.20
+  clock network delay (ideal)                             0.00       1.20
+  clk_gate_u_mix_columns/u_output_reg/data_out_reg/latch/GN (TLATNXL)
+                                                          0.00       1.20 f
+  clk_gate_u_mix_columns/u_output_reg/data_out_reg/latch/Q (TLATNXL)
+                                                          0.27       1.47 r
+  clk_gate_u_mix_columns/u_output_reg/data_out_reg/main_gate/A (AND2X1)
+                                                          0.00       1.47 r
+  data arrival time                                                  1.47
+
+  clock clk (fall edge)                                   1.20       1.20
+  clock network delay (ideal)                             0.00       1.20
+  clock uncertainty                                       0.10       1.30
+  clk_gate_u_mix_columns/u_output_reg/data_out_reg/main_gate/B (AND2X1)
+                                                          0.00       1.30 f
+  clock gating hold time                                  0.00       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -1.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.17
+
+
+  Startpoint: clk_gate_u_control_fsm/u_state_reg/data_out_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: clk_gate_u_control_fsm/u_state_reg/data_out_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   1.20       1.20
+  clock network delay (ideal)                             0.00       1.20
+  clk_gate_u_control_fsm/u_state_reg/data_out_reg/latch/GN (TLATNXL)
+                                                          0.00       1.20 f
+  clk_gate_u_control_fsm/u_state_reg/data_out_reg/latch/Q (TLATNXL)
+                                                          0.28       1.48 r
+  clk_gate_u_control_fsm/u_state_reg/data_out_reg/main_gate/A (AND2XL)
+                                                          0.00       1.48 r
+  data arrival time                                                  1.48
+
+  clock clk (fall edge)                                   1.20       1.20
+  clock network delay (ideal)                             0.00       1.20
+  clock uncertainty                                       0.10       1.30
+  clk_gate_u_control_fsm/u_state_reg/data_out_reg/main_gate/B (AND2XL)
+                                                          0.00       1.30 f
+  clock gating hold time                                  0.00       1.30
+  data required time                                                 1.30
+  --------------------------------------------------------------------------
+  data required time                                                 1.30
+  data arrival time                                                 -1.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.18
+
+
+  Startpoint: u_control_fsm/u_state_reg/data_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_control_fsm/u_done_dly/data_out_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_control_fsm/u_state_reg/data_out_reg[0]/CK (DFFSX1)
+                                                          0.00       0.00 r
+  u_control_fsm/u_state_reg/data_out_reg[0]/QN (DFFSX1)
+                                                          0.42       0.42 r
+  U14710/Y (NAND2X1)                                      0.08       0.50 f
+  u_control_fsm/u_done_dly/data_out_reg[0]/D (DFFSX1)     0.00       0.50 f
+  data arrival time                                                  0.50
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  u_control_fsm/u_done_dly/data_out_reg[0]/CK (DFFSX1)
+                                                          0.00       0.10 r
+  library hold time                                      -0.10       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: u_input_reg/data_out_reg[102]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_126 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_input_reg/data_out_reg[102]/CK (DFFSX1)               0.00       0.00 r
+  u_input_reg/data_out_reg[102]/QN (DFFSX1)               0.45       0.45 r
+  U7138/Y (NOR2X1)                                        0.10       0.55 f
+  R_126/D (DFFSX1)                                        0.00       0.55 f
+  data arrival time                                                  0.55
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  R_126/CK (DFFSX1)                                       0.00       0.10 r
+  library hold time                                      -0.11      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: u_control_fsm/u_state_reg/data_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_gate_u_control_fsm/u_state_reg/data_out_reg/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   2.40       2.40
+  clock network delay (ideal)                             0.00       2.40
+  u_control_fsm/u_state_reg/data_out_reg[0]/CK (DFFSX1)
+                                                          0.00       2.40 r
+  u_control_fsm/u_state_reg/data_out_reg[0]/QN (DFFSX1)
+                                                          0.42       2.82 r
+  clk_gate_u_control_fsm/u_state_reg/data_out_reg/EN (SNPS_CLOCK_GATE_HIGH_Top_0)
+                                                          0.00       2.82 r
+  clk_gate_u_control_fsm/u_state_reg/data_out_reg/test_or/Y (OR2XL)
+                                                          0.15       2.97 r
+  clk_gate_u_control_fsm/u_state_reg/data_out_reg/latch/D (TLATNXL)
+                                                          0.00       2.97 r
+  data arrival time                                                  2.97
+
+  clock clk (rise edge)                                   2.40       2.40
+  clock network delay (ideal)                             0.00       2.40
+  clock uncertainty                                       0.10       2.50
+  clk_gate_u_control_fsm/u_state_reg/data_out_reg/latch/GN (TLATNXL)
+                                                          0.00       2.50 r
+  library hold time                                      -0.10       2.40
+  data required time                                                 2.40
+  --------------------------------------------------------------------------
+  data required time                                                 2.40
+  data arrival time                                                 -2.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: u_input_reg/data_out_reg[30]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_303 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_input_reg/data_out_reg[30]/CK (DFFSX1)                0.00       0.00 r
+  u_input_reg/data_out_reg[30]/QN (DFFSX1)                0.46       0.46 r
+  U9333/Y (NOR2XL)                                        0.13       0.59 f
+  R_303/D (DFFSX1)                                        0.00       0.59 f
+  data arrival time                                                  0.59
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  R_303/CK (DFFSX1)                                       0.00       0.10 r
+  library hold time                                      -0.11      -0.01
+  data required time                                                -0.01
+  --------------------------------------------------------------------------
+  data required time                                                -0.01
+  data arrival time                                                 -0.59
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.59
+
+
+  Startpoint: u_control_fsm/u_state_reg/data_out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_control_fsm/u_sb_valid_dly/data_out_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_control_fsm/u_state_reg/data_out_reg[0]/CK (DFFSX1)
+                                                          0.00       0.00 r
+  u_control_fsm/u_state_reg/data_out_reg[0]/Q (DFFSX1)
+                                                          0.50       0.50 f
+  U14708/Y (NAND2X1)                                      0.11       0.61 r
+  u_control_fsm/u_sb_valid_dly/data_out_reg[0]/D (DFFSX1)
+                                                          0.00       0.61 r
+  data arrival time                                                  0.61
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  u_control_fsm/u_sb_valid_dly/data_out_reg[0]/CK (DFFSX1)
+                                                          0.00       0.10 r
+  library hold time                                      -0.09       0.01
+  data required time                                                 0.01
+  --------------------------------------------------------------------------
+  data required time                                                 0.01
+  data arrival time                                                 -0.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: u_input_reg/data_out_reg[39]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_151 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_input_reg/data_out_reg[39]/CK (DFFSX1)                0.00       0.00 r
+  u_input_reg/data_out_reg[39]/QN (DFFSX1)                0.43       0.43 r
+  U7144/Y (NOR2X1)                                        0.15       0.58 f
+  R_151/D (DFFSX1)                                        0.00       0.58 f
+  data arrival time                                                  0.58
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  R_151/CK (DFFSX1)                                       0.00       0.10 r
+  library hold time                                      -0.12      -0.02
+  data required time                                                -0.02
+  --------------------------------------------------------------------------
+  data required time                                                -0.02
+  data arrival time                                                 -0.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+1

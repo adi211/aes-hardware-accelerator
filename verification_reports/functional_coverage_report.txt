@@ -1,0 +1,193 @@
+QuestaSim-64 vcover 2022.3_1 Coverage Utility 2022.08 Aug 12 2022
+Start time: 14:43:55 on Jan 01,2026
+vcover report -cvg -details /users_home/adishl/tb.ucdb 
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /tb_top/u_cov
+=== Design Unit: work.tb_cov
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          6        na        na        na
+            Covergroup Bins         25        25         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /tb_top/u_cov/cg_main                           100.00%        100          -    Covered              
+    covered/total bins:                                    25         25          -                      
+    missing/total bins:                                     0         25          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_state                               100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_start_in_idle                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_sbvalid_in_mc                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_done_in_idle                        100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_reset_while_busy                    100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_input_bucket                        100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/tb_top/u_cov/cg                100.00%        100          -    Covered              
+    covered/total bins:                                    25         25          -                      
+    missing/total bins:                                     0         25          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_state                               100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin reset                                           6          1          -    Covered              
+        bin idle                                         2147          1          -    Covered              
+        bin sb                                            560          1          -    Covered              
+        bin mc                                            559          1          -    Covered              
+        bin flow_idle_sb_mc_idle                          559          1          -    Covered              
+    Coverpoint cp_start_in_idle                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin seen                                          560          1          -    Covered              
+    Coverpoint cp_sbvalid_in_mc                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin seen                                          559          1          -    Covered              
+    Coverpoint cp_done_in_idle                        100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin seen                                          559          1          -    Covered              
+    Coverpoint cp_reset_while_busy                    100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin seen                                            1          1          -    Covered              
+    Coverpoint cp_input_bucket                        100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin bucket[0]                                      29          1          -    Covered              
+        bin bucket[1]                                      32          1          -    Covered              
+        bin bucket[2]                                      29          1          -    Covered              
+        bin bucket[3]                                      34          1          -    Covered              
+        bin bucket[4]                                      41          1          -    Covered              
+        bin bucket[5]                                      42          1          -    Covered              
+        bin bucket[6]                                      31          1          -    Covered              
+        bin bucket[7]                                      34          1          -    Covered              
+        bin bucket[8]                                      35          1          -    Covered              
+        bin bucket[9]                                      40          1          -    Covered              
+        bin bucket[10]                                     35          1          -    Covered              
+        bin bucket[11]                                     40          1          -    Covered              
+        bin bucket[12]                                     43          1          -    Covered              
+        bin bucket[13]                                     29          1          -    Covered              
+        bin bucket[14]                                     30          1          -    Covered              
+        bin bucket[15]                                     36          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /tb_top/u_cov/cg_main                           100.00%        100          -    Covered              
+    covered/total bins:                                    25         25          -                      
+    missing/total bins:                                     0         25          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_state                               100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_start_in_idle                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_sbvalid_in_mc                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_done_in_idle                        100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_reset_while_busy                    100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint cp_input_bucket                        100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/tb_top/u_cov/cg                100.00%        100          -    Covered              
+    covered/total bins:                                    25         25          -                      
+    missing/total bins:                                     0         25          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint cp_state                               100.00%        100          -    Covered              
+        covered/total bins:                                 5          5          -                      
+        missing/total bins:                                 0          5          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin reset                                           6          1          -    Covered              
+        bin idle                                         2147          1          -    Covered              
+        bin sb                                            560          1          -    Covered              
+        bin mc                                            559          1          -    Covered              
+        bin flow_idle_sb_mc_idle                          559          1          -    Covered              
+    Coverpoint cp_start_in_idle                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin seen                                          560          1          -    Covered              
+    Coverpoint cp_sbvalid_in_mc                       100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin seen                                          559          1          -    Covered              
+    Coverpoint cp_done_in_idle                        100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin seen                                          559          1          -    Covered              
+    Coverpoint cp_reset_while_busy                    100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin seen                                            1          1          -    Covered              
+    Coverpoint cp_input_bucket                        100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin bucket[0]                                      29          1          -    Covered              
+        bin bucket[1]                                      32          1          -    Covered              
+        bin bucket[2]                                      29          1          -    Covered              
+        bin bucket[3]                                      34          1          -    Covered              
+        bin bucket[4]                                      41          1          -    Covered              
+        bin bucket[5]                                      42          1          -    Covered              
+        bin bucket[6]                                      31          1          -    Covered              
+        bin bucket[7]                                      34          1          -    Covered              
+        bin bucket[8]                                      35          1          -    Covered              
+        bin bucket[9]                                      40          1          -    Covered              
+        bin bucket[10]                                     35          1          -    Covered              
+        bin bucket[11]                                     40          1          -    Covered              
+        bin bucket[12]                                     43          1          -    Covered              
+        bin bucket[13]                                     29          1          -    Covered              
+        bin bucket[14]                                     30          1          -    Covered              
+        bin bucket[15]                                     36          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 100.00%
+
+End time: 14:43:55 on Jan 01,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

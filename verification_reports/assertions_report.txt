@@ -1,0 +1,30 @@
+=== Instance: /tb_top/u_asrt
+=== Design Unit: work.tb_assertions
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       9         9         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/tb_top/u_asrt/assert__8
+                     TB/tb_assertions.sv(55)            0          1
+/tb_top/u_asrt/assert__7
+                     TB/tb_assertions.sv(50)            0          1
+/tb_top/u_asrt/assert__6
+                     TB/tb_assertions.sv(44)            0          1
+/tb_top/u_asrt/assert__5
+                     TB/tb_assertions.sv(39)            0          1
+/tb_top/u_asrt/assert__4
+                     TB/tb_assertions.sv(33)            0          1
+/tb_top/u_asrt/assert__3
+                     TB/tb_assertions.sv(27)            0          1
+/tb_top/u_asrt/assert__1
+                     TB/tb_assertions.sv(15)            0          1
+/tb_top/u_asrt/assert__0
+                     TB/tb_assertions.sv(10)            0          1
+/tb_top/u_asrt/assert__2
+                     TB/tb_assertions.sv(21)            0          1
+
+=================================================================================

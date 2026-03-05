@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Top
+Version: W-2024.09
+Date   : Mon Jan  5 20:59:25 2026
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /users_home/adishl/LibraryFiles/db/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  20.2986 mW   (93%)
+  Net Switching Power  =   1.6369 mW    (7%)
+                         ---------
+Total Dynamic Power    =  21.9355 mW  (100%)
+
+Cell Leakage Power     =   5.2286 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network     17.0885            0.0000            0.0000           17.0885  (  77.88%)  i
+register           1.9842            0.3158        1.7546e+06            2.3017  (  10.49%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      1.2259            1.3211        3.4740e+06            2.5505  (  11.62%)
+--------------------------------------------------------------------------------------------------
+Total             20.2986 mW         1.6369 mW     5.2286e+06 pW        21.9407 mW
+1

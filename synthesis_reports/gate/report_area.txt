@@ -1,0 +1,50 @@
+ 
+****************************************
+Report : area
+Design : Top
+Version: W-2024.09
+Date   : Mon Jan  5 21:02:04 2026
+****************************************
+
+Library(s) Used:
+
+    slow (File: /users_home/adishl/LibraryFiles/db/slow.db)
+
+Number of ports:                          408
+Number of nets:                          8768
+Number of cells:                         8479
+Number of combinational cells:           7885
+Number of sequential cells:               589
+Number of macros/black boxes:               0
+Number of buf/inv:                       1631
+Number of references:                     121
+
+Combinational area:             103993.244829
+Buf/Inv area:                    11768.803377
+Noncombinational area:           41114.303642
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                145107.548471
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area              Local cell area
+                                  --------------------  ------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-       Noncombi-   Black-
+                                  Total        Total    national     national    boxes   Design
+--------------------------------  -----------  -------  -----------  ----------  ------  --------------------------
+Top                               145107.5485    100.0  103886.8000  40967.9420  0.0000  Top
+clk_gate_u_control_fsm/u_state_reg/data_out_reg
+                                      63.2016      0.0      26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_Top_0
+clk_gate_u_input_reg/data_out_reg     63.2016      0.0      26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_Top_3
+clk_gate_u_mix_columns/u_output_reg/data_out_reg
+                                      63.2016      0.0      26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_Top_1
+clk_gate_u_sub_bytes/u_output_reg/data_out_reg
+                                      63.2016      0.0      26.6112     36.5904  0.0000  SNPS_CLOCK_GATE_HIGH_Top_2
+--------------------------------  -----------  -------  -----------  ----------  ------  --------------------------
+Total                                                   103993.2448  41114.3036  0.0000
+
+1
